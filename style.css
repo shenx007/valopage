@@ -102,6 +102,13 @@ body {
     transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
 }
 
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .item:hover {
     transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(180px) scale(1.1);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
