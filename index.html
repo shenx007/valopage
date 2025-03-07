@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="path/to/your/file.pdf" download class="nav-link">Download PDF</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner with Slider -->
+    <div class="banner">
+        <div class="slider" style="--quantity: 6;">
+            <div class="item" style="--position: 1"><img src="images/v1.jpg" alt="Image 1"></div>
+            <div class="item" style="--position: 2"><img src="images/v2.webp" alt="Image 2"></div>
+            <div class="item" style="--position: 3"><img src="images/v3.jpeg" alt="Image 3"></div>
+            <div class="item" style="--position: 4"><img src="images/v4.jpg" alt="Image 4"></div>
+            <div class="item" style="--position: 5"><img src="images/v5.jpg" alt="Image 5"></div>
+            <div class="item" style="--position: 6"><img src="images/v6.jpg" alt="Image 6"></div>
+        </div>
+    </div>
+
+    <!-- Chatbot Container -->
+<div class="chatbot-container">
+    <div class="chatbot-header">
+        <h3>Chatbot</h3>
+        <button id="close-chatbot">&times;</button>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages"></div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input" placeholder="Type a message...">
+        <button id="send-message">Send</button>
+    </div>
+</div>
+
+<!-- Chatbot Toggle Button -->
+<button id="chatbot-toggle" class="chatbot-toggle">
+    <img src="images/chlo.svg" alt="Chatbot Icon">
+</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 <span class="website-name">Shehan Perera</span>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
