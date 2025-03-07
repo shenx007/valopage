@@ -13,17 +13,16 @@
             <div class="logo">
                 <img src="images/logo.svg" alt="Logo">
             </div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#contact" class="nav-link">Contact Us</a>
-                <a href="path/to/your/file.pdf" download class="nav-link">Download PDF</a>
-            </div>
-            <!-- Add this inside the .nav-container -->
             <button id="mobile-menu-toggle" class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="path/to/your/file.pdf" download class="nav-link">Download PDF</a>
+            </div>
         </div>
     </nav>
 
@@ -40,24 +39,24 @@
     </div>
 
     <!-- Chatbot Container -->
-<div class="chatbot-container">
-    <div class="chatbot-header">
-        <h3>Chatbot</h3>
-        <button id="close-chatbot">&times;</button>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Chatbot</h3>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages"></div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type a message...">
+            <button id="send-message">Send</button>
+        </div>
     </div>
-    <div class="chatbot-body">
-        <div class="chatbot-messages"></div>
-    </div>
-    <div class="chatbot-input">
-        <input type="text" id="chatbot-input" placeholder="Type a message...">
-        <button id="send-message">Send</button>
-    </div>
-</div>
 
-<!-- Chatbot Toggle Button -->
-<button id="chatbot-toggle" class="chatbot-toggle">
-    <img src="images/chlo.svg" alt="Chatbot Icon">
-</button>
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <img src="images/chlo.svg" alt="Chatbot Icon">
+    </button>
 
     <!-- Footer -->
     <footer class="footer">

@@ -71,6 +71,8 @@ function getBotResponse(userMessage) {
     // Default response
     return responses[userMessage.toLowerCase()] || "I'm sorry, I didn't understand that.";
 }
+
+// Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
