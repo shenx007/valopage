@@ -92,7 +92,7 @@ body {
 /* Slider Container */
 .slider {
     width: 80%;
-    max-width: 300px;
+    max-width: 400px; /* Increase max-width for better spacing */
     height: auto;
     aspect-ratio: 1;
     position: relative;
@@ -109,7 +109,7 @@ body {
     top: 50%;
     left: 50%;
     transform-origin: center center;
-    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(150px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg));
+    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(200px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg));
     transform-style: preserve-3d;
     border: none;
     border-radius: 10px;
@@ -125,7 +125,7 @@ body {
 }
 
 .item:hover {
-    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(180px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg)) scale(1.1);
+    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(220px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg)) scale(1.1);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     z-index: 10;
 }
