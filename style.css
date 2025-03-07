@@ -92,13 +92,12 @@ body {
 /* Slider Container */
 .slider {
     width: 80%;
-    max-width: 400px; /* Increase max-width for better spacing */
+    max-width: 400px;
     height: auto;
     aspect-ratio: 1;
     position: relative;
-    transform-style: preserve-3d;
-    animation: rotate 30s infinite linear;
     margin: 0 auto;
+    perspective: 1000px;
 }
 
 /* Slider Items */
@@ -109,12 +108,11 @@ body {
     top: 50%;
     left: 50%;
     transform-origin: center center;
-    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(200px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg));
-    transform-style: preserve-3d;
-    border: none;
+    animation: moveInCircle 30s infinite linear;
+    animation-delay: calc((var(--position) - 1) * -5s); /* Delay each image */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .item img {
@@ -124,19 +122,13 @@ body {
     border-radius: 10px;
 }
 
-.item:hover {
-    transform: rotate(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateX(220px) rotate(calc((var(--position) - 1) * (-360 / var(--quantity)) * 1deg)) scale(1.1);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
-    z-index: 10;
-}
-
-/* Keyframes for rotation */
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
+/* Keyframes for circular movement */
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
     }
-    to {
-        transform: rotateY(360deg);
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
     }
 }
 
